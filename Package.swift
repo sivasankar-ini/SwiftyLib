@@ -1,30 +1,29 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "9.3.1"
 let package = Package(
     name: "MobilistenAll",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
-        .library(
-            name: "Mobilisten",
-            targets: ["Mobilisten"]),
-        .library(
-            name: "MobilistenCore",
-            targets: ["MobilistenCore"]),
-        .library(
-            name: "MobilistenCallsCore",
-            targets: ["MobilistenCallsCore"]),
+        .library(name: "Mobilisten", targets: ["Mobilisten"]),
+        .library(name: "MobilistenCore", targets: ["MobilistenCore"]),
+        .library(name: "MobilistenCallsCore", targets: ["MobilistenCallsCore"]),
     ],
     targets: [
         .binaryTarget(
             name: "Mobilisten",
-            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip", checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e"),
+            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip",
+            checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e"
+        ),
         .binaryTarget(
             name: "MobilistenCore",
-            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip", checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e"),
+            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip",
+            checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e"
+        ),
         .binaryTarget(
             name: "MobilistenCallsCore",
-            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip", checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e")
+            url: "https://raw.githubusercontent.com/sivasankar-ini/SwiftyLib/main/MySDK.zip",
+            checksum: "8f4ee26576ff52456a9812d796aba260a403c078a7ff8bcc19eecf5beeb0dc2e"
+        )
     ]
 )

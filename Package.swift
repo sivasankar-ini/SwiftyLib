@@ -9,6 +9,12 @@ let package = Package(
         .library(
             name: "Mobilisten",
             targets: ["Mobilisten"]),
+        .library(
+            name: "MobilistenCore",
+            targets: ["MobilistenCore"]),
+        .library(
+            name: "MobilistenCallsCore",
+            targets: ["MobilistenCallsCore"]),
     ],
     targets: [
         .binaryTarget(

@@ -4,7 +4,7 @@
 import PackageDescription
 let version = "10.0.1-beta"
 let package = Package(
-    name: "MobilistenAll",
+    name: "Mobilisten",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(

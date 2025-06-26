@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]),
         .library(
             name: "Mobilisten-Calls",
-            targets: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]),
+            targets: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]),
     ],
     targets: [
         
@@ -32,6 +32,12 @@ let package = Package(
             name: "MobilistenCallsCore",
             url: "https://raw.githubusercontent.com/zoho/Mobilisten-iOS-Beta/v\(version)/Frameworks/MobilistenCallsCore.zip",
             checksum: "427608a8104eb15b2b3383893cecaca2bd02b9dcef990a0ca5f9640c9ca752ca"
+        ),
+        
+        .binaryTarget(
+            name: "MobilistenCalls",
+            url: "https://raw.githubusercontent.com/zoho/Mobilisten-iOS-Beta/v\(version)/Frameworks/MobilistenCalls.zip",
+            checksum: "4ecfea0bec32848608c1074e3468fef50c514a99bba9ea29ad89b395c4165a60"
         ),
 
         .binaryTarget(

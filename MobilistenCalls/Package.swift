@@ -2,12 +2,13 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-let version = "10.0.1-beta"
+let version = "10.0.0"
 let package = Package(
-    name: "Mobilisten-Calls",
+    name: "MobilistenCalls",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "Mobilisten-Calls",
+            name: "MobilistenCalls",
             targets: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]),
     ],
     targets: [

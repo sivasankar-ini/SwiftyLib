@@ -122,12 +122,12 @@ let package = Package(
         ),
 
         .target(
-            name: "Mobilisten",
+            name: "MobilistenAll",
             dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]
         ),
         
         .target(
-            name: "MobilistenCalls",
+            name: "MobilistenAllCalls",
             dependencies: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]
         )
     ]

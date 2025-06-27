@@ -9,11 +9,11 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Mobilisten",
-            targets: ["MobilistenAll"]),
+            targets: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]),
                     
         .library(
             name: "MobilistenCalls",
-            targets: ["MobilistenAllCalls"]),
+            targets: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]),
     ],
     targets: [
         .binaryTarget(
@@ -123,14 +123,12 @@ let package = Package(
 
         .target(
             name: "MobilistenAll",
-            dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"],
-            path: ""
+            dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]
         ),
         
         .target(
             name: "MobilistenAllCalls",
             dependencies: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"],
-            path: ""
         )
     ]
 )

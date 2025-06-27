@@ -1,10 +1,11 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 let version = "10.0.1-beta"
 let package = Package(
     name: "Mobilisten",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "Mobilisten",

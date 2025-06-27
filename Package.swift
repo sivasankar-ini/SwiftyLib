@@ -6,13 +6,12 @@ let version = "10.0.1-beta"
 let package = Package(
     name: "Mobilisten",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Mobilisten",
             targets: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]),
                     
         .library(
-            name: "MobilistenCalls",
+            name: "Mobilisten-Calls",
             targets: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]),
     ],
     targets: [
@@ -123,12 +122,12 @@ let package = Package(
 
         .target(
             name: "MobilistenAll",
-            dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore", "AVCallKitBridge"]
+            dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore"]
         ),
         
         .target(
             name: "MobilistenAllCalls",
-            dependencies: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"],
+            dependencies: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]
         )
     ]
 )

@@ -118,16 +118,6 @@ let package = Package(
             name: "AVCallKitBridge",
             url: "https://raw.githubusercontent.com/zoho/Mobilisten-iOS-Beta/v\(version)/Frameworks/AVCallKitBridge.zip",
             checksum: "10cc97f34d0b4ac900aebb551f896ee9d3c8d1f6d899b410052d89d5b4dc1bdc"
-        ),
-
-        .target(
-            name: "MobilistenAll",
-            dependencies: ["Mobilisten", "MobilistenCore", "MobilistenCallsCore"]
-        ),
-        
-        .target(
-            name: "MobilistenAllCalls",
-            dependencies: ["AppBridge", "AVCallKit", "AVCommonsCore", "AVCommonsVoIP", "Floatkit", "iRTCPMeeting", "MeetingsCore", "MobilistenCalls", "Starscream", "TraceKit", "UIPullDownMenuKit", "WebRTC", "WebRTCExtras", "WMSPackage", "ZIPFoundation"]
         )
     ]
 )
